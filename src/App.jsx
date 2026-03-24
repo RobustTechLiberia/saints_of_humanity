@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import HomePage from "./Pages/home";
 import AboutPage from "./Pages/about";
@@ -9,7 +9,7 @@ import Job from "./Pages/job";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
@@ -17,7 +17,7 @@ function App() {
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/job" element={<Job />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
