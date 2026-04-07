@@ -24,7 +24,7 @@ class BlogPage extends React.Component {
                 <img
                   src={img1}
                   alt="sanitation"
-                  className="aspect-[4/3] w-full cursor-pointer object-cover hover:brightness-50"
+                  className="aspect-4/3 w-full cursor-pointer object-cover hover:brightness-50"
                 />
                 <div className="bg-white">
                   <p className="mx-0 py-3 text-left text-2xl font-serif capitalize md:text-xl">
@@ -38,7 +38,7 @@ class BlogPage extends React.Component {
                 <img
                   src={img2}
                   alt="Education"
-                  className="aspect-[4/3] w-full cursor-pointer object-cover hover:brightness-50"
+                  className="aspect-4/3 w-full cursor-pointer object-cover hover:brightness-50"
                 />
                 <div className="bg-white">
                   <p className="mx-0 py-3 text-left text-2xl font-serif capitalize md:text-xl">
@@ -52,7 +52,7 @@ class BlogPage extends React.Component {
                 <img
                   src={img3}
                   alt="health care"
-                  className="aspect-[4/3] w-full cursor-pointer object-cover hover:brightness-50"
+                  className="aspect-4/3 w-full cursor-pointer object-cover hover:brightness-50"
                 />
                 <div className="bg-white">
                   <p className="mx-0 py-3 text-left text-2xl font-serif capitalize md:text-xl">
