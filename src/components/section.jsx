@@ -4,12 +4,12 @@ class AboutSection extends React.Component {
   render() {
     return (
       <>
-        <div className="bg-white md:h-96 h-auto md:mb-20 md:mx-20 mx-2 md:pt-2">
-          <div className="flex flex-wrap md:justify-evenly justify-center items-center">
+        <div className="mx-2 h-auto bg-white md:mx-auto md:mb-0 md:max-w-5xl md:px-8 md:pt-2">
+          <div className="flex flex-wrap items-center justify-center md:justify-evenly">
             <h1 className="font-serif md:py-8 pt-10 font-medium text-4xl text-left capitalize">
               who we are?
             </h1>
-            <p className="font-serif text-lg font-normal text-left md:mx-60 md:pt-0 py-8 mx-5 text-black">
+            <p className="mx-5 py-8 text-left text-lg font-normal font-serif text-black md:mx-auto md:max-w-3xl md:pt-0">
               A nonprofit organization established to provide comprehensive
               humanitarian services to vulnerable populations while actively
               addressing climate change challenges. Founded under the Liberia

@@ -5,11 +5,21 @@
     <title>Saints of Humanity</title>
     <script>
       // Single Page App fallback for GitHub Pages
+      var base = "/saints_of_humanity";
       var path = window.location.pathname;
       var search = window.location.search;
       var hash = window.location.hash;
+
+      // Strip base from the path so the hash route is clean (e.g. "/about")
+      if (path.indexOf(base) === 0) {
+        path = path.slice(base.length);
+      }
+      if (path === "") {
+        path = "/";
+      }
+
       window.location.replace(
-        window.location.origin + "/saints_of_humanity/" + "#" + path + search + hash
+        window.location.origin + base + "/#" + path + search + hash
       );
     </script>
   </head>

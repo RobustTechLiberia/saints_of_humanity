@@ -9,11 +9,11 @@ function FAQ() {
 
   return (
     <>
-      <div className="bg-white md:pb-20 pb-28 h-auto">
-        <h1 className="font-medium font-serif uppercase text-left text-3xl md:mx-80 md:pt-20 py-5 mx-10">
+      <div className="bg-white h-auto pb-3 md:pb-14">
+        <h1 className="mx-10 py-5 text-left text-3xl font-medium font-serif uppercase md:mx-auto md:max-w-3xl md:px-8 md:pt-5">
           faq
         </h1>
-        <div className="bg-white md:mx-80 mx-8 md:py-10">
+        <div className="mx-8 bg-white md:mx-auto md:max-w-3xl md:px-8 md:py-10">
           <div className="bg-white">
             <div className="border-b border-black/15">
               <h2 id="faq-heading-1">

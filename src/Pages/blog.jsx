@@ -14,50 +14,56 @@ class BlogPage extends React.Component {
         <title>Blog - Saints of Humanity || Liberia</title>
         <NavBar />
         <OurVision />
-        <div className="bg-white md:mx-20 h-auto md:mb-20 mx-8 flex flex-wrap justify-center items-center">
-          <h1 className="text-3xl font-serif font-medium capitalize md:pt-8 py-8">
+        <div className="mx-8 flex h-auto flex-wrap items-center justify-center bg-white md:mx-auto md:mb-20 md:max-w-6xl md:px-8">
+          <h1 className="py-8 text-3xl font-serif font-medium capitalize md:pt-8">
             our impact
           </h1>
-          <div className="md:mx-20 flex flex-wrap md:justify-center md:pt-2 items-center justify-center md:gap-5 gap-5  md:h-96 h-auto">
-            <div className="md:w-80 w-80 bg-white h-80">
-              <div className="w-auto h-28 bg-black bg-blend-overlay">
+          <div className="flex h-auto w-full flex-wrap items-start justify-center gap-5 bg-white md:pt-2">
+            <div className="h-auto w-80 bg-white md:w-[31%]">
+              <div className="w-auto bg-black bg-blend-overlay">
                 <img
                   src={img1}
                   alt="sanitation"
-                  className="cursor-pointer hover:brightness-50"
+                  className="aspect-[4/3] w-full cursor-pointer object-cover hover:brightness-50"
                 />
-                <p className="font-serif  md:mx-0 mx-0 text-2xl md:text-xl py-3 capitalize text-left">
-                  community enagement- providing safe drinking water
-                </p>
+                <div className="bg-white">
+                  <p className="mx-0 py-3 text-left text-2xl font-serif capitalize md:text-xl">
+                    community enagement- providing safe drinking water
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="md:w-80 w-80 bg-white h-80">
-              <div className="w-auto h-28 bg-black bg-blend-overlay">
+            <div className="h-auto w-80 bg-white md:w-[31%]">
+              <div className="w-auto bg-black bg-blend-overlay">
                 <img
                   src={img2}
                   alt="Education"
-                  className="cursor-pointer hover:brightness-50"
+                  className="aspect-[4/3] w-full cursor-pointer object-cover hover:brightness-50"
                 />
-                <p className="font-serif  md:mx-0 mx-0 text-2xl md:text-xl py-3 capitalize text-left">
-                  youth empowerment - affordable education
-                </p>
+                <div className="bg-white">
+                  <p className="mx-0 py-3 text-left text-2xl font-serif capitalize md:text-xl">
+                    youth empowerment - affordable education
+                  </p>
+                </div>
               </div>
             </div>
-            <div className="md:w-80 w-80 bg-white h-80">
-              <div className="w-auto h-28 bg-black bg-blend-overlay">
+            <div className="h-auto w-80 bg-white md:w-[31%]">
+              <div className="w-auto bg-black bg-blend-overlay">
                 <img
                   src={img3}
                   alt="health care"
-                  className="cursor-pointer hover:brightness-50"
+                  className="aspect-[4/3] w-full cursor-pointer object-cover hover:brightness-50"
                 />
-                <p className="font-serif  md:mx-0 mx-0 text-2xl md:text-xl py-3 capitalize text-left">
-                  community enagement- providing health care services
-                </p>
+                <div className="bg-white">
+                  <p className="mx-0 py-3 text-left text-2xl font-serif capitalize md:text-xl">
+                    community enagement- providing health care services
+                  </p>
+                </div>
               </div>
             </div>
             {/* row 2 */}
             {/* see more button */}
-            <div className="bg-white md:py-5 py-3">
+            <div className="flex w-full justify-center bg-white py-3 md:py-5">
               <button
                 className="bg-black px-5 py-2 cursor-pointer text-white font-serif font-normal"
                 id="see_more"
