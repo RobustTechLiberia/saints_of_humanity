@@ -1,33 +1,48 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import logo from "../assets/images/large.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelope,
+  faMobileScreenButton,
+} from "@fortawesome/free-solid-svg-icons";
+import logo from "../assets/images/logo.png";
 
 class NavBar extends React.Component {
   render() {
     return (
       <>
-        <div className="pt-10 bg-white">
-          <div className="flex flex-wrap md:justify-center md:items-center justify-evenly gap-2">
-            <div className=" bg-white md:mx-20 mx-0 w-28 ">
-              {/* <img src={logo} alt="LOGO" className="h-auto w-28" /> */}
-              {/* <h2 className="text-lg font-serif font-medium uppercase">
-                saints of <sapn className="text-sm">humanity                    </sapn>
-              </h2> */}
+        <div className="bg-white">
+          <div className="flex flex-col gap-3 py-2 md:grid md:grid-cols-3 md:items-center">
+            {/* logo */}
+            <div className="flex items-center justify-center md:col-start-2">
+              <img src={logo} alt="LOGO" className="mx-5 h-36 w-auto" />
             </div>
-            <div className=" bg-white">
-              {/* <ul className="list-none md:mx-20 mx-5">
+            {/* contact */}
+            <div className="bg-white mx-5 md:mx-20">
+              <ul className="flex list-none flex-wrap items-center justify-center gap-x-5 gap-y-2 font-serif text-sm md:mx-20 md:flex-nowrap md:justify-end md:text-base">
                 <li>
-                  <a href="tel +23177">+231770163850</a>
-                </li>
-                <li>
-                  <a href="info@saintsofhumanity.org">
-                    info@sanitsofhumanity.org
+                  <a
+                    href="tel:+231770163850"
+                    className="flex items-center gap-2"
+                  >
+                    <FontAwesomeIcon icon={faMobileScreenButton} />
+                    <span>+231770163850</span>
                   </a>
                 </li>
-              </ul> */}
+                <li>
+                  <a
+                    href="mailto:info@saintsofhumanity.org"
+                    className="flex items-center gap-2"
+                  >
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    <span>info@sanitsofhumanity.org</span>
+                  </a>
+                </li>
+              </ul>
             </div>
+            <div className="hidden md:block" />
           </div>
-          <div className="bg-white h-10 md:mx-20 mx-2 border-black border-t-2 border-b-2">
+          <div className="bg-white h-10 md:mx-20 mx-2 md:border-none md:border-black md:border-t-2 md:border-b-2">
             <ul className="font-serif uppercase  font-normal gap-5 text-md py-2 flex justify-center items-center">
               <li>
                 <Link to="/" className="hover:text-gray-900">

@@ -9,6 +9,8 @@ import FAQ from "../components/faq";
 import Footer from "../components/footer";
 import seoImage from "../assets/hero.png";
 
+const faviconUrl = `${import.meta.env.BASE_URL}logo.png`;
+
 class HomePage extends React.Component {
   render() {
     return (
@@ -25,7 +27,7 @@ class HomePage extends React.Component {
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={seoImage} />
-        <Favicon url={seoImage} />
+        <Favicon url={faviconUrl} />
         <NavBar />
         <Banner />
         <Section />
