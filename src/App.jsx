@@ -5,6 +5,7 @@ import HomePage from "./Pages/home";
 import AboutPage from "./Pages/about";
 import BlogPage from "./Pages/blog";
 import FaqPage from "./Pages/faq";
+import DonatePage from "./Pages/donate";
 import Job from "./Pages/job";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/donate" element={<DonatePage />} />
         <Route path="/job" element={<Job />} />
       </Routes>
     </HashRouter>

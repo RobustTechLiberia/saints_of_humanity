@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class Banner extends React.Component {
   render() {
@@ -11,9 +12,12 @@ class Banner extends React.Component {
         </div>
         {/* Donate button */}
         <div className="py-10 bg-white flex flex-wrap justify-center items-center">
-          <button className="px-8 py-3 cursor-pointer hover:bg-gray-900 bg-black border-0 text-white font-serif text-lg capitalize">
+          <Link
+            to="/donate"
+            className="px-8 py-3 cursor-pointer hover:bg-gray-900 bg-black border-0 text-white font-serif text-lg capitalize"
+          >
             donate
-          </button>
+          </Link>
         </div>
       </>
     );
