@@ -19,7 +19,7 @@ class NavBar extends React.Component {
             </div>
             {/* contact */}
             <div className="bg-white mx-5 md:mx-20">
-              <ul className="flex list-none flex-wrap items-center justify-center gap-x-5 gap-y-2 font-serif text-sm md:mx-20 md:flex-nowrap md:justify-end md:text-base">
+              <ul className="flex list-none flex-wrap items-center justify-center gap-x-5 gap-y-2 font-serif text-sm md:mx-32 md:flex-nowrap md:justify-center md:text-base">
                 <li>
                   <a
                     href="tel:+231770163850"
