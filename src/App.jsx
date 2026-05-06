@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import HomePage from "./Pages/home";
 import AboutPage from "./Pages/about";
@@ -13,7 +13,8 @@ import PageLoader from "./components/page_loader";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [showScrollTop, setShowScrollTop] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState("down");
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const finishLoading = () => {
@@ -36,7 +37,10 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 200);
+      const currentScrollY = window.scrollY;
+
+      setScrollDirection(currentScrollY < lastScrollY.current ? "up" : "down");
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -47,7 +51,15 @@ function App() {
     };
   }, []);
 
-  const scrollToTop = () => {
+  const handleStickyArrowClick = () => {
+    if (scrollDirection === "up") {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: "smooth",
+      });
+      return;
+    }
+
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -67,16 +79,16 @@ function App() {
           <Route path="/job" element={<Job />} />
         </Routes>
       </HashRouter>
-      {showScrollTop ? (
-        <button
-          type="button"
-          onClick={scrollToTop}
-          className="fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-black text-white shadow-lg transition hover:bg-gray-800"
-          aria-label="Scroll to top"
-        >
-          <FontAwesomeIcon icon={faArrowUp} />
-        </button>
-      ) : null}
+      <button
+        type="button"
+        onClick={handleStickyArrowClick}
+        className="fixed bottom-20 right-6 z-[60] flex h-12 w-12 items-center justify-center rounded-full bg-black text-white shadow-lg transition hover:bg-gray-800"
+        aria-label={scrollDirection === "up" ? "Scroll to bottom" : "Scroll to top"}
+      >
+        <FontAwesomeIcon
+          icon={scrollDirection === "up" ? faArrowDown : faArrowUp}
+        />
+      </button>
     </>
   );
 }
