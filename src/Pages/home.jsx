@@ -10,8 +10,10 @@ import seoImage from "../assets/hero.png";
 
 class HomePage extends React.Component {
   render() {
+    const { fadeIn } = this.props;
+
     return (
-      <>
+      <div className={fadeIn ? "page-fade-in" : ""}>
         <title>Home - Saints of Humanity || Liberia</title>
         <meta
           name="description"
@@ -31,7 +33,7 @@ class HomePage extends React.Component {
         <AboutSection />
         <FAQ />
         <Footer />
-      </>
+      </div>
     );
   }
 }
