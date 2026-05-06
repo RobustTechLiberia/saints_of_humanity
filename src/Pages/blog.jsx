@@ -12,6 +12,10 @@ class BlogPage extends React.Component {
     return (
       <>
         <title>Blog - Saints of Humanity || Liberia</title>
+        <meta
+          name="description"
+          content="To create a world where every individual, regardless of circumstance, has access to dignity, opportunity, and support. We envision resilient communities empowered through education, healthcare, humanitarian aid, environmental stewardship, disaster preparedness, and social justice, with compassionate “Saints” leading the way in fostering sustainable change across the world."
+        />
         <NavBar />
         <OurVision />
         <div className="mx-8 flex h-auto flex-wrap items-center justify-center bg-white md:mx-auto md:mb-20 md:max-w-6xl md:px-8">

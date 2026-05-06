@@ -4,12 +4,12 @@ class CoreValues extends React.Component {
   render() {
     return (
       <>
-        <div className="bg-white md:mt-5 mt-8 flex flex-wrap justify-center items-center">
+        <div className="mt-8 flex flex-wrap items-center justify-center bg-white md:mt-5">
           <h1 className="capitalize text-3xl text-center font-serif font-medium md:mt-5 py-8">
             our core values
           </h1>
         </div>
-        <div className="mx-8 grid h-auto gap-6 bg-white md:mx-20 md:grid-cols-2 md:items-stretch">
+        <div className="mx-auto grid w-full max-w-5xl gap-8 bg-white px-8 md:grid-cols-2 md:items-start md:px-8">
           <div className="h-full">
             <ul className="h-full list-none text-left text-xl font-serif">
               <li className="py-3">

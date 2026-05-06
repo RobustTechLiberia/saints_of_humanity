@@ -9,6 +9,10 @@ class AboutPage extends React.Component {
     return (
       <>
         <title>About - Saints of Humanity || Liberia</title>
+        <meta
+          name="description"
+          content="Humanitarian Engagement: Recruiting and training dedicated members, known as SAINTS, to serve communities and implement our mission."
+        />
         <NavBar />
         <HeroImage />
         <AboutSection />
