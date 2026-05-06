@@ -6,6 +6,8 @@ import "./stickyChatbot.css";
 const StickyChatbot = () => {
   const [open, setOpen] = useState(false);
 
+  const cannot = "can't provide you as per request";
+
   const steps = useMemo(
     () => [
       {
@@ -21,12 +23,8 @@ const StickyChatbot = () => {
       },
       {
         id: "route",
-        // We do a simple keyword-based routing.
-        // If no match, the fallback response is used.
         function: ({ input }) => {
           const text = (input || "").toLowerCase();
-
-          const cannot = "can't provide you as per request";
 
           // who we are
           if (
@@ -35,9 +33,7 @@ const StickyChatbot = () => {
             text.includes("organization") ||
             text.includes("about")
           ) {
-            return {
-              value: "who",
-            };
+            return "who";
           }
 
           // mission
@@ -46,7 +42,7 @@ const StickyChatbot = () => {
             text.includes("we exist") ||
             text.includes("restore dignity")
           ) {
-            return { value: "mission" };
+            return "mission";
           }
 
           // vision
@@ -55,17 +51,17 @@ const StickyChatbot = () => {
             text.includes("envision") ||
             text.includes("world where")
           ) {
-            return { value: "vision" };
+            return "vision";
           }
 
           // core values
           if (
             text.includes("core") ||
             text.includes("values") ||
-            text.includes("diaster relief") ||
+            text.includes("disaster relief") ||
             text.includes("criminal justice")
           ) {
-            return { value: "values" };
+            return "values";
           }
 
           // education/healthcare / humanitarian engagement
@@ -73,14 +69,12 @@ const StickyChatbot = () => {
             text.includes("education") ||
             text.includes("health") ||
             text.includes("healthcare") ||
-            text.includes("t a p") ||
             text.includes("tap") ||
             text.includes("physician") ||
-            text.includes("p a p") ||
             text.includes("pap") ||
             text.includes("humanitarian")
           ) {
-            return { value: "education_health" };
+            return "education_health";
           }
 
           // donate
@@ -90,10 +84,10 @@ const StickyChatbot = () => {
             text.includes("help") ||
             text.includes("support")
           ) {
-            return { value: "donate" };
+            return "donate";
           }
 
-          return { value: cannot };
+          return cannot;
         },
         asMessage: true,
         trigger: "end",
@@ -136,10 +130,7 @@ const StickyChatbot = () => {
       },
       {
         id: "end",
-        message: (props) =>
-          props.value === "can't provide you as per request"
-            ? "can't provide you as per request"
-            : props.value,
+        message: (props) => (props.value === cannot ? cannot : props.value),
         trigger: "again",
       },
       {
