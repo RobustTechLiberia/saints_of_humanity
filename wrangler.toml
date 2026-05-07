@@ -1,3 +1,6 @@
 name = "saints"
-main = "src/index.ts"
+main = "workers-site/index.js"
 compatibility_date = "2026-05-07"
+
+[site]
+bucket = "./dist"
