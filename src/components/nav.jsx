@@ -74,8 +74,8 @@ class NavBar extends React.Component {
               >
                 <li>
                   <a
-                    href="tel:+231770163850"
-                    className="flex items-center gap-1"
+                    href="tel:+231888310442"
+                    className="flex items-center gap-1 font-serif"
                   >
                     <FontAwesomeIcon icon={faMobileScreenButton} />
                     <span>+231888310442</span>
