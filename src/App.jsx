@@ -86,7 +86,7 @@ function App() {
       <button
         type="button"
         onClick={handleStickyArrowClick}
-        className="fixed bottom-20 right-6 z-[60] flex h-12 w-12 items-center justify-center rounded-full bg-black text-white shadow-lg transition hover:bg-gray-800"
+        className="fixed bottom-20 right-6 z-60 flex h-12 w-12 items-center justify-center rounded-full bg-black text-white shadow-lg transition hover:bg-gray-800"
         aria-label={
           scrollDirection === "up" ? "Scroll to bottom" : "Scroll to top"
         }
