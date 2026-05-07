@@ -1,7 +1,7 @@
 {
   "name": "saints",
   "private": true,
-  "homepage": "https://robusttechliberia.github.io/saints_of_humanity",
+  "homepage": "https://robusttechliberia.github.io/saints_of_humanity/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
