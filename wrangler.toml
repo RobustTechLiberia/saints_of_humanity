@@ -1,5 +1,4 @@
 name = "saints"
-main = "workers-site/index.js"
 compatibility_date = "2026-05-07"
 
 [site]
