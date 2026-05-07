@@ -78,7 +78,7 @@ class NavBar extends React.Component {
                     className="flex items-center gap-1"
                   >
                     <FontAwesomeIcon icon={faMobileScreenButton} />
-                    <span>+231770163850</span>
+                    <span>+231888310442</span>
                   </a>
                 </li>
 
