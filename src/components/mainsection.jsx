@@ -22,7 +22,7 @@ class MainSection extends React.Component {
                 <span className="text-white md:text-5xl text-3xl block font-serif ">
                   150+
                 </span>
-                <span className="mt-2 block font-serif md:text-3xl text-2xl md:mx-0 mx-20">
+                <span className="mt-2 block font-serif md:text-2xl text-2xl md:mx-0 mx-20">
                   youth empowerment
                 </span>
               </span>

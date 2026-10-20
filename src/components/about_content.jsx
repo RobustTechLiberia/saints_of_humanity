@@ -56,7 +56,7 @@ class AboutContent extends React.Component {
                 core ethics
               </h1>
               <ul
-                className="mx-5 flex flex-wrap md:justify-start md:items-start md:gap-4 list-none text-base md:mx-28"
+                className="mx-5 flex md:text-md text-md flex-wrap md:justify-start md:items-start md:gap-4 list-none text-base md:mx-28"
                 id="ul"
               >
                 <li className="w-[calc(50%-0.5rem)] py-3 font-serif font-semibold text-orange-600">
