@@ -23,7 +23,7 @@ class NavBar extends React.Component {
               className="mr-3 h-6 sm:h-9"
               alt="Flowbite React Logo"
             /> */}
-            <span className="self-center md:mt-5 mt-3 md:mx-52 uppercase md:text-4xl font-serif text-orange-600 text-3xl whitespace-nowrap  mx-8 font-semibold dark:text-white">
+            <span className="self-center md:mt-5 mt-3 md:mx-52 uppercase md:text-4xl font-serif md:text-orange-600 text-orange-600 text-3xl whitespace-nowrap  mx-8 font-semibold dark:text-white">
               soh{" "}
             </span>
           </NavbarBrand>

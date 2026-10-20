@@ -4,8 +4,7 @@ import { Progress } from "flowbite-react";
 class Section extends React.Component {
   render() {
     const customProgressTheme = {
-      base:
-        "md:w-xl w-80 overflow-hidden bg-gray-200 dark:bg-gray-700 rounded-none",
+      base: "overflow-hidden bg-gray-200 dark:bg-gray-700 rounded-none",
       color: {
         orange: "bg-orange-600 dark:bg-orange-600 rounded-none",
       },
@@ -46,7 +45,7 @@ class Section extends React.Component {
                   <Progress
                     progress={45}
                     size="md"
-                    className="rounded-none md:mx-10 mx-5 w-80"
+                    className="rounded-none md:mx-10 mx-5 md:w-xl w-80"
                     theme={customProgressTheme}
                     color="orange"
                   />
