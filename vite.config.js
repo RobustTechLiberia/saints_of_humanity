@@ -2,9 +2,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
+import flowbiteReact from "flowbite-react/plugin/vite";
 
 export default defineConfig({
-  base: "/saints_of_humanity/",
+  // Vercel serves the app from the domain root rather than a GitHub Pages subpath.
+  base: "/",
 
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), flowbiteReact()],
 });

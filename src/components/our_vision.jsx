@@ -10,7 +10,7 @@ class OurVision extends React.Component {
           </h1>
         </div>
         <div className="bg-white flex flex-wrap md:justify-evenly justify-center items-center mx-8 md:mx-20 h-auto">
-          <p className="text-xl font-serif text-left md:w-3xl">
+          <p className="w-full max-w-3xl text-left text-xl font-serif">
             To create a world where every individual, regardless of
             circumstance, has access to dignity, opportunity, and support. We
             envision resilient communities empowered through education,

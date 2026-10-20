@@ -1,41 +1,57 @@
 import React from "react";
+import { Progress } from "flowbite-react";
 
 class Section extends React.Component {
   render() {
+    const customProgressTheme = {
+      base: "w-full overflow-hidden bg-gray-200 dark:bg-gray-700 rounded-none",
+      color: {
+        orange: "bg-orange-600 dark:bg-orange-600 rounded-none",
+      },
+    };
+
     return (
       <>
-        <div className="mt-10 flex flex-wrap items-stretch justify-center gap-5 bg-white md:mx-auto md:mt-14 md:max-w-5xl md:gap-6 md:px-8">
-          <div className="mx-8 flex w-auto bg-white md:mx-0 md:w-96">
-            <p className="h-full text-black text-lg font-serif">
-              <b>Humanitarian Engagement</b>: Recruiting and training dedicated
-              members, known as SAINTS, to serve communities and implement our
-              mission. <b>Support for Vulnerable Populations</b>: Providing
-              food, shelter, medical care, counseling, and rehabilitation for
-              homeless, mentally ill, and underserved individuals.
-            </p>
-            {/* learn more button */}
-            {/* <div className="py-5 bg-white">
-              <a href="#" className="px-4 py-3 bg-black text-white font-serif">
-                Learn more
-              </a>
-            </div> */}
-          </div>
-          <div className="mx-8 flex w-auto bg-white md:mx-0 md:w-96">
-            <p className="h-full text-black text-lg font-serif">
-              <b>Education and Healthcare</b>: Operating schools, clinics, and
-              outreach programs, including the Teachers Assistance Program (TAP)
-              and Physician Assistant Program (PAP), to deliver quality
-              education and healthcare in urban and rural areas.{" "}
-              <b>Environmental Conservation</b>: Protecting natural resources
-              through tree planting, waste cleanup, reforestation, water system
-              construction, and wildlife preservation.
-            </p>
-            {/* learn more button */}
-            {/* <div className="py-5 bg-white">
-              <a href="#" className="px-4 py-3 bg-black text-white font-serif">
-                Learn more
-              </a>
-            </div> */}
+        <div className="bg-white">
+          <div className="md:mt-20 mt-5">
+            <div className="mx-4 flex flex-wrap items-start justify-center gap-2 sm:mx-8 md:mx-32 md:justify-start md:gap-0">
+              <div className="h-96 w-full max-w-[23.5rem] bg-orange-600 md:w-96">
+                <h1 className="mx-6 mt-10 font-serif text-3xl font-semibold capitalize sm:mx-10">
+                  our core values
+                </h1>
+                <p className="mx-6 py-5 font-serif text-base text-white sm:mx-10">
+                  Assisting communities affected by natural or man-made
+                  disasters with shelter, food, education, and essential
+                  services. Supporting initiatives aligned with the United
+                  Nations Sustainable Development Goals (SDGs) and conducting
+                  research to inform humanitarian and social programs.
+                </p>
+              </div>
+              <div
+                className="h-96 w-full max-w-[23.5rem] bg-gray-950 bg-blend-overlay bg-cover bg-top bg-no-repeat md:max-w-none md:flex-1 lg:w-[36rem] lg:flex-none"
+                id="content"
+              >
+                <h1 className="mx-6 mt-10 font-serif text-3xl font-semibold capitalize text-orange-700 sm:mx-10 md:text-4xl">
+                  our mission
+                </h1>
+                <p className="mx-6 py-3 font-serif text-base text-white sm:mx-10">
+                  We envision resilient communities empowered through education,
+                  healthcare, humanitarian aid, environmental stewardship,
+                  disaster preparedness, and social justice, with compassionate
+                  “Saints” leading the world.
+                </p>
+                <div className="text-base font-medium dark:text-white"></div>
+                <div className="md:my-8 my-8 mx-6 sm:mx-10">
+                  <Progress
+                    progress={45}
+                    size="md"
+                    className=" md:w-95 rounded-none"
+                    theme={customProgressTheme}
+                    color="orange"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </>

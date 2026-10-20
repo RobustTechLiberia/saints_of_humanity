@@ -2,11 +2,12 @@ import React from "react";
 import NavBar from "../components/nav";
 import Banner from "../components/banner";
 import Section from "../components/content";
-import AboutSection from "../components/section";
-import HeroImage from "../components/hero_image";
-import FAQ from "../components/faq";
-import Footer from "../components/footer";
-import seoImage from "../assets/hero.png";
+import AboutSection from "../components/about_section";
+import MainSection from "../components/mainsection";
+// import HeroImage from "../components/hero_image";
+// import FAQ from "../components/faq";
+// import Footer from "../components/footer";
+// import seoImage from "../assets/hero.png";
 
 class HomePage extends React.Component {
   render() {
@@ -25,14 +26,13 @@ class HomePage extends React.Component {
           content="Supporting vulnerable communities through education, healthcare, and humanitarian outreach."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={seoImage} />
+        {/* <meta property="og:image" content={seoImage} /> */}
         <NavBar />
         <Banner />
         <Section />
-        <HeroImage />
         <AboutSection />
-        <FAQ />
-        <Footer />
+        <MainSection />
+        {/* <Footer /> */}
       </div>
     );
   }

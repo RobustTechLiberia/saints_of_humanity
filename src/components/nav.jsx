@@ -1,100 +1,68 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faEnvelope,
-  faMobileScreenButton,
-} from "@fortawesome/free-solid-svg-icons";
-import logo from "../assets/images/logo.png";
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarLink,
+  NavbarToggle,
+} from "flowbite-react";
+// REMOVED: import Link from "next/link";
 
 class NavBar extends React.Component {
   render() {
     return (
       <>
-        <div className="bg-white border-none border-t-2 border-b-2 border-black md:mx-10 mx-2 overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-4 py-3">
-            {/* logo */}
-            <div className="flex justify-center md:justify-start md:mx-8">
-              <img
-                src={logo}
-                alt="LOGO"
-                className="sm:h-36 md:h-36 lg:h-36 h-36 w-auto"
-              />
-            </div>
-
-            {/* navigation */}
-            <div className="flex justify-center overflow-x-auto">
-              <ul
-                className="font-serif uppercase font-normal 
-              flex items-center 
-              gap-2 sm:gap-4 md:gap-5 
-              text-lg sm:text-xs md:text-sm lg:text-base 
-              whitespace-nowrap px-2"
-              >
-                <li>
-                  <Link to="/" className="hover:text-gray-900">
-                    home
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/about" className="hover:text-gray-900">
-                    about
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/blog" className="hover:text-gray-900">
-                    blog
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/faq" className="hover:text-gray-900">
-                    faq
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/job" className="hover:text-gray-900">
-                    job
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            {/* contact */}
-            <div className="flex justify-center md:justify-end">
-              <ul
-                className="flex flex-col lg:flex-row items-center 
-              gap-x-4 gap-y-1 
-              font-serif 
-              text-lg sm:text-xs md:text-sm lg:text-base 
-              md:mr-3 break-all"
-              >
-                <li>
-                  <a
-                    href="tel:+231888310442"
-                    className="flex items-center gap-1 font-serif"
-                  >
-                    <FontAwesomeIcon icon={faMobileScreenButton} />
-                    <span>+231888310442</span>
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="mailto:info@saintsofhumanity.org"
-                    className="flex items-center gap-1"
-                  >
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    <span>info@saintsofhumanity.org</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <Navbar
+          fluid
+          className="absolute top-0 left-0 z-50 h-20 w-full bg-inherit! md:bg-inherit! dark:bg-inherit! dark:md:bg-inherit!"
+        >
+          {/* REMOVED: as={Link} */}
+          <NavbarBrand href="https://flowbite-react.com">
+            {/* <img
+              src="/favicon.svg"
+              className="mr-3 h-6 sm:h-9"
+              alt="Flowbite React Logo"
+            /> */}
+            <span className="self-center md:mx-32 uppercase md:text-4xl font-serif text-orange-600 text-3xl whitespace-nowrap  mx-8 font-semibold dark:text-white">
+              soh{" "}
+            </span>
+          </NavbarBrand>
+          <NavbarToggle className="!border-0 !bg-transparent hover:!bg-transparent focus:!bg-transparent active:!bg-transparent focus:!ring-0" />
+          <NavbarCollapse className="!mt-5 !w-full !border-0 !bg-gray-800 md:!mt-0 md:!w-auto md:!bg-gray-900 dark:!bg-gray-800 dark:md:!bg-gray-900">
+            <NavbarLink
+              href="/"
+              active
+              className="!w-full !border-0 !bg-gray-800 !text-white hover:!bg-transparent focus:!bg-transparent active:!bg-transparent md:!w-auto md:!bg-gray-900 dark:!bg-gray-800 dark:md:!bg-gray-900"
+            >
+              Home
+            </NavbarLink>
+            {/* REMOVED: as={Link} and changed href to target your route */}
+            <NavbarLink
+              href="/about"
+              className="!w-full !border-0 !bg-gray-800 !text-white hover:!bg-transparent focus:!bg-transparent active:!bg-transparent md:!w-auto md:!bg-gray-900 dark:!bg-gray-800 dark:md:!bg-gray-900"
+            >
+              About
+            </NavbarLink>
+            <NavbarLink
+              href="/services"
+              className="!w-full !border-0 !bg-gray-800 !text-white hover:!bg-transparent focus:!bg-transparent active:!bg-transparent md:!w-auto md:!bg-gray-900 dark:!bg-gray-800 dark:md:!bg-gray-900"
+            >
+              Services
+            </NavbarLink>
+            <NavbarLink
+              href="/pricing"
+              className="!w-full !border-0 !bg-gray-800 !text-white hover:!bg-transparent focus:!bg-transparent active:!bg-transparent md:!w-auto md:!bg-gray-900 dark:!bg-gray-800 dark:md:!bg-gray-900"
+            >
+              Pricing
+            </NavbarLink>
+            <NavbarLink
+              href="/contact"
+              className="!w-full !border-0 !bg-gray-800 !text-white hover:!bg-transparent focus:!bg-transparent active:!bg-transparent md:!w-auto md:!bg-gray-900 dark:!bg-gray-800 dark:md:!bg-gray-900"
+            >
+              Contact
+            </NavbarLink>
+          </NavbarCollapse>
+        </Navbar>
       </>
     );
   }

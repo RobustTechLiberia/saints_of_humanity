@@ -4,13 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faArrowUp } from "@fortawesome/free-solid-svg-icons";
 import "./App.css";
 import HomePage from "./Pages/home";
-import AboutPage from "./Pages/about";
-import BlogPage from "./Pages/blog";
-import FaqPage from "./Pages/faq";
-import DonatePage from "./Pages/donate";
-import Job from "./Pages/job";
+// import AboutPage from "./Pages/about";
+// import BlogPage from "./Pages/blog";
+// import FaqPage from "./Pages/faq";
+// import DonatePage from "./Pages/donate";
+// import Job from "./Pages/job";
 import PageLoader from "./components/page_loader";
-import StickyChatbot from "./components/StickyChatbot";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -73,20 +72,18 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path="/" element={<HomePage fadeIn />} />
-          <Route path="/about" element={<AboutPage />} />
+          {/* <Route path="/about" element={<AboutPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/faq" element={<FaqPage />} />
           <Route path="/donate" element={<DonatePage />} />
-          <Route path="/job" element={<Job />} />
+          <Route path="/job" element={<Job />} /> */}
         </Routes>
       </HashRouter>
-
-      <StickyChatbot />
 
       <button
         type="button"
         onClick={handleStickyArrowClick}
-        className="fixed bottom-20 right-6 z-60 flex h-12 w-12 items-center justify-center rounded-full bg-black text-white shadow-lg transition hover:bg-gray-800"
+        className="fixed bottom-6 right-4 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-black text-white shadow-lg transition hover:bg-gray-800 sm:bottom-20 sm:right-6"
         aria-label={
           scrollDirection === "up" ? "Scroll to bottom" : "Scroll to top"
         }

@@ -17,7 +17,7 @@ class HeroImage extends React.Component {
     return (
       <>
         <div className="flex flex-wrap md:mt-16 mt-5 md:justify-center md:items-center justify-center items-center md:pb-10 pb-5 md:mx-20">
-          <div className="bg-gray-950 h-80 md:h-96 md:w-3xl md:mx-0 w-96  overflow-hidden rounded-0">
+          <div className="h-80 w-full max-w-96 overflow-hidden rounded-none bg-gray-950 md:h-96 md:max-w-3xl md:mx-0">
             <div
               id="default-carousel"
               className="relative w-full h-full"

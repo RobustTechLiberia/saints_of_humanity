@@ -289,7 +289,7 @@ class DonationForm extends React.Component {
         <button
           type="button"
           onClick={this.handlePreviousStep}
-          className={`rounded-none border border-black px-5 py-2 text-md font-semibold text-black ${
+          className={`rounded-none border border-black px-5 py-2 text-base font-semibold text-black ${
             currentStep === 0 ? "invisible" : ""
           }`}
         >
@@ -298,7 +298,7 @@ class DonationForm extends React.Component {
         <button
           type={currentStep === 2 ? "submit" : "button"}
           onClick={currentStep === 2 ? undefined : this.handleNextStep}
-          className="min-w-24 rounded-none bg-black px-5 py-2 text-md font-semibold text-white shadow-[0_4px_0_0_#111111]"
+          className="min-w-24 rounded-none bg-black px-5 py-2 text-base font-semibold text-white shadow-[0_4px_0_0_#111111]"
         >
           {currentStep === 2 ? "Submit" : "Next step"}
         </button>
