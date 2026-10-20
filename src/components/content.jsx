@@ -29,7 +29,7 @@ class Section extends React.Component {
                 </p>
               </div>
               <div
-                className="h-96 w-full max-w-[23.5rem] bg-gray-950 bg-blend-overlay bg-cover bg-top bg-no-repeat md:max-w-none md:flex-1 lg:w-[44rem] lg:flex-none"
+                className="h-96 w-full max-w-[23.5rem] bg-gray-950 bg-blend-overlay bg-cover bg-top bg-no-repeat md:max-w-none md:flex-1 lg:w-162 lg:flex-none"
                 id="content"
               >
                 <h1 className="mx-6 mt-10 font-serif text-3xl font-semibold capitalize text-orange-700 sm:mx-10 md:text-4xl">
