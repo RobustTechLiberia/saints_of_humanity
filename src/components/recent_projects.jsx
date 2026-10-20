@@ -16,8 +16,8 @@ class RecentProjects extends React.Component {
             </p>
 
             <div className="flex flex-wrap md:justify-start md:items-start justify-center items-center md:gap-20 mt-8 gap-5">
-              <div className="w-40 md:w-60 bg-gray-100 h-44"></div>
-              <div className="w-40 md:w-60 bg-gray-100 h-44"></div>
+              <div className="w-80 md:w-60 bg-gray-100 h-44"></div>
+              <div className="w-80 md:w-60 bg-gray-100 h-44"></div>
             </div>
           </div>
 
