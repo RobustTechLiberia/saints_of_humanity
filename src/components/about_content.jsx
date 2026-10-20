@@ -3,10 +3,44 @@ import React from "react";
 import "../App.css";
 
 class AboutContent extends React.Component {
+  componentDidMount() {
+    const prefersReducedMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+    const isMobileOrTablet = window.matchMedia("(max-width: 1023px)").matches;
+
+    if (
+      prefersReducedMotion ||
+      !isMobileOrTablet ||
+      !("IntersectionObserver" in window)
+    ) {
+      this.section?.classList.add("is-visible");
+      return;
+    }
+
+    this.observer = new IntersectionObserver(
+      ([entry]) => {
+        entry.target.classList.toggle("is-visible", entry.isIntersecting);
+      },
+      { threshold: 0.16, rootMargin: "0px 0px -48px" },
+    );
+
+    if (this.section) this.observer.observe(this.section);
+  }
+
+  componentWillUnmount() {
+    this.observer?.disconnect();
+  }
+
   render() {
     return (
       <>
-        <div className="mt-5 flex flex-wrap items-start justify-center gap-8 h-auto md:mb-0 mb-20 bg-white px-6 md:mx-20 md:mt-8 md:justify-start md:gap-10 md:px-0 lg:mx-14 lg:gap-2">
+        <div
+          ref={(element) => {
+            this.section = element;
+          }}
+          className="about-scroll-reveal mt-5 mb-20 flex h-auto flex-wrap items-start justify-center gap-8 bg-white px-6 md:mb-0 md:mt-8 md:justify-start md:gap-10 md:px-0 lg:mx-14 lg:gap-2"
+        >
           <div className="w-full max-w-lg bg-white">
             <h1 className="my-3 font-serif text-3xl font-semibold capitalize text-orange-600 md:mx-20 md:mt-8">
               who we are?
@@ -21,14 +55,20 @@ class AboutContent extends React.Component {
               <h1 className="py-0 font-serif text-3xl font-semibold capitalize md:mx-20 md:py-3">
                 core ethics
               </h1>
-              <ul className="mx-5 text-lg md:mx-28 md:text-xl" id="ul">
-                <li className="text-xl py-3 font-serif font-semibold text-orange-600">
+              <ul
+                className="mx-5 flex flex-wrap md:justify-start md:items-start md:gap-4 list-none text-base md:mx-28"
+                id="ul"
+              >
+                <li className="w-[calc(50%-0.5rem)] py-3 font-serif font-semibold text-orange-600">
                   Diaster Relief
                 </li>
-                <li className="text-xl py-3 font-serif font-semibold text-orange-600">
+                <li className="w-[calc(50%-0.5rem)] py-3 font-serif font-semibold text-orange-600">
                   Criminal Justice and Reintegration
                 </li>
-                <li className="text-xl py-3 font-serif font-semibold text-orange-600">
+                <li className="w-[calc(50%-0.5rem)] py-3 font-serif font-semibold text-orange-600">
+                  Heritage and Cultural Preservation
+                </li>
+                <li className="w-[calc(50%-0.5rem)] py-3 font-serif font-semibold text-orange-600">
                   Community Development and Research
                 </li>
               </ul>

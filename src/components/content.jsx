@@ -4,7 +4,8 @@ import { Progress } from "flowbite-react";
 class Section extends React.Component {
   render() {
     const customProgressTheme = {
-      base: "w-full overflow-hidden bg-gray-200 dark:bg-gray-700 rounded-none",
+      base:
+        "md:w-xl w-80 overflow-hidden bg-gray-200 dark:bg-gray-700 rounded-none",
       color: {
         orange: "bg-orange-600 dark:bg-orange-600 rounded-none",
       },
@@ -14,7 +15,7 @@ class Section extends React.Component {
       <>
         <div className="bg-white">
           <div className="md:mt-20 mt-5">
-            <div className="mx-4 flex flex-wrap items-start justify-center gap-2 sm:mx-8 md:mx-32 md:justify-start md:gap-0">
+            <div className="mx-4 flex flex-wrap items-start justify-center gap-2  md:mx-32 md:justify-start md:gap-0 lg:gap-0">
               <div className="h-96 w-full max-w-[23.5rem] bg-orange-600 md:w-96">
                 <h1 className="mx-6 mt-10 font-serif text-3xl font-semibold capitalize sm:mx-10">
                   our core values
@@ -28,7 +29,7 @@ class Section extends React.Component {
                 </p>
               </div>
               <div
-                className="h-96 w-full max-w-[23.5rem] bg-gray-950 bg-blend-overlay bg-cover bg-top bg-no-repeat md:max-w-none md:flex-1 lg:w-[36rem] lg:flex-none"
+                className="h-96 w-full max-w-[23.5rem] bg-gray-950 bg-blend-overlay bg-cover bg-top bg-no-repeat md:max-w-none md:flex-1 lg:w-[44rem] lg:flex-none"
                 id="content"
               >
                 <h1 className="mx-6 mt-10 font-serif text-3xl font-semibold capitalize text-orange-700 sm:mx-10 md:text-4xl">
@@ -41,11 +42,11 @@ class Section extends React.Component {
                   “Saints” leading the world.
                 </p>
                 <div className="text-base font-medium dark:text-white"></div>
-                <div className="md:my-8 my-8 mx-6 sm:mx-10">
+                <div className="my-8 w-full">
                   <Progress
                     progress={45}
                     size="md"
-                    className=" md:w-95 rounded-none"
+                    className="rounded-none md:mx-10 mx-5"
                     theme={customProgressTheme}
                     color="orange"
                   />

@@ -4,7 +4,17 @@ class MainSection extends React.Component {
   render() {
     return (
       <>
-        <div className="bg-gray-950">kkkkkk</div>
+        <div className="bg-gray-950">
+          <div className="flex flex-wrap justify-evenly">
+            <div className="32 h-auto">
+              <span className="text-center text-orange-600 text-3xl">
+                community engagement
+              </span>
+            </div>
+            <div className="32 h-auto">1</div>
+            <div className="32 h-auto">1</div>
+          </div>
+        </div>
       </>
     );
   }
