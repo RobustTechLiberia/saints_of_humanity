@@ -5,7 +5,7 @@ class RecentProjects extends React.Component {
     return (
       <>
         <div className="flex flex-wrap md:justify-evenly md:h-96 h-auto bg-white">
-          <div className="md:my-10 md:mx-10 my-5 mx-8 md:w-xl w-auto bg-white flex flex-col">
+          <div className="md:my-10 md:mx-10 my-5 mx-3 md:w-xl w-auto bg-white flex flex-col">
             <span className="font-serif text-3xl md:text-3xl capitalize font-semibold">
               recent <span className="text-orange-600">projects</span>
             </span>
