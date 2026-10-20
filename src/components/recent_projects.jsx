@@ -9,7 +9,7 @@ class RecentProjects extends React.Component {
             <span className="font-serif text-3xl mx-4 md:text-3xl capitalize font-semibold">
               recent <span className="text-orange-600">projects</span>
             </span>
-            <p className="md:py-3 py-3 md:text-md text-xl font-serif lowercase">
+            <p className="md:py-3 py-3 md:mx-0 mx-4 md:text-md text-xl font-serif lowercase">
               Through its multifaceted approach, the organization seeks to build
               resilient communities, protect ecosystems, and promote justice and
               equity for all.
