@@ -13,8 +13,8 @@ class Section extends React.Component {
     return (
       <>
         <div className="bg-white">
-          <div className="md:mt-20 mt-0">
-            <div className="mx-0 flex flex-wrap items-start justify-center gap-0  md:mx-32 md:justify-start md:gap-0 lg:gap-0">
+          <div className="md:mt-20 mt-5">
+            <div className="mx-4 flex flex-wrap items-start justify-center gap-2  md:mx-32 md:justify-start md:gap-0 lg:gap-0">
               <div className="h-96 w-full max-w-[23.5rem] bg-orange-600 md:w-96">
                 <h1 className="mx-6 mt-10 font-serif text-3xl font-semibold capitalize sm:mx-10">
                   our core values
@@ -41,11 +41,12 @@ class Section extends React.Component {
                   “Saints” leading the world.
                 </p>
                 <div className="text-base font-medium dark:text-white"></div>
+                {/* progress bar */}
                 <div className="my-8 w-full">
                   <Progress
                     progress={45}
                     size="md"
-                    className="rounded-none md:mx-10 mx-4 md:w-xl w-80"
+                    className="rounded-none md:mx-10 mx-3 md:w-xl w-80"
                     theme={customProgressTheme}
                     color="orange"
                   />
