@@ -46,7 +46,7 @@ class Section extends React.Component {
                   <Progress
                     progress={45}
                     size="md"
-                    className="rounded-none md:mx-10 mx-5"
+                    className="rounded-none md:mx-10 mx-5 w-80"
                     theme={customProgressTheme}
                     color="orange"
                   />
