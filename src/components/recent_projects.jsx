@@ -10,10 +10,10 @@ class RecentProjects extends React.Component {
         <div className="flex flex-wrap md:justify-evenly md:h-180 lg:h-180 h-auto bg-white">
           {/* projects */}
           <div className="md:my-20 lg:my-20 md:mx-10 lg:mx-16 my-5 mx-3 md:w-xl lg:w-xl w-auto bg-white flex flex-col">
-            <span className="font-serif text-3xl md:mx-0 mx-5 my-4 md:my-0 lg:my-0 lg:mx-0 md:text-3xl capitalize font-semibold">
+            <span className="font-serif text-3xl md:mx-0 mx-3 my-4 md:my-0 lg:my-0 lg:mx-0 md:text-3xl capitalize font-semibold">
               recent <span className="text-orange-600">projects</span>
             </span>
-            <p className="md:py-3 py-3 md:mx-0 mx-8 md:text-md text-xl font-serif capitalize">
+            <p className="md:py-3 py-3 md:mx-0 mx-3 md:text-md text-xl font-serif capitalize">
               Through its multifaceted approach, the organization seeks to build
               resilient communities, protect ecosystems, and promote justice and
               equity for all.
