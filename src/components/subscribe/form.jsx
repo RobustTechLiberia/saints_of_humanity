@@ -32,7 +32,7 @@ class SubForm extends React.Component {
               <input
                 type="submit"
                 value="send"
-                className="py-3 px-4 uppercase border-0 text-white bg-black"
+                className="py-3 px-4 uppercase font-serif border-0 text-white bg-black"
               />
             </div>
           </form>
