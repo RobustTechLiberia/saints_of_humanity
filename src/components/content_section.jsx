@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/images/african-child-portrait-2356546.jpg";
+import img from "../assets/images/IMG-20261021-WA0011.jpg";
 
 class ContentSection extends React.Component {
   render() {

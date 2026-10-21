@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../assets/images/istockphoto-474234518-612x612 (1).jpg";
-import img2 from "../assets/images/istockphoto-523255548-612x612.jpg";
-import img3 from "../assets/images/abuja-nigeria-september-5-2025-260nw-2686848741.jpg";
+import img1 from "../assets/images/IMG-20261021-WA0011.jpg";
+import img2 from "../assets/images/IMG-20261021-WA0016.jpg";
+import img3 from "../assets/images/IMG-20261021-WA0019.jpg";
 
 class RecentProjects extends React.Component {
   render() {
@@ -20,13 +20,19 @@ class RecentProjects extends React.Component {
             </p>
 
             <div className="flex flex-wrap md:justify-start md:items-start justify-center items-center md:gap-20 mt-8 gap-20">
-              <div className="w-80 md:w-60 bg-gray-800 h-52">
+              <div className="w-80 md:w-60 bg-gray-800 h-32">
                 <img
                   src={img1}
                   alt=""
                   srcset=""
                   className="w-80 md:w-60 h-52 object-cover"
                 />
+                {/* description */}
+                <div className="w-auto h-28 bg-white font-serif font-semibold capitalize md:text-xl md:py-5 lg:py-5 py-8 lg:text-xl text-lg">
+                  conducted an <span className="uppercase">hiv/aids</span>{" "}
+                  awareness campaign at konuwah high school, barnesville estate,
+                  monrovia, liberia
+                </div>
               </div>
               <div className="w-80 md:w-60 bg-gray-800 h-52">
                 <img
@@ -35,6 +41,10 @@ class RecentProjects extends React.Component {
                   srcset=""
                   className="w-80 md:w-60 h-52 object-cover"
                 />
+                {/* description */}
+                <div className="w-auto h-28 bg-white font-serif font-semibold capitalize md:text-xl md:py-5 lg:py-5 py-8 lg:text-xl text-lg">
+                  a successful school feeding program
+                </div>
               </div>
             </div>
           </div>
