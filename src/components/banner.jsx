@@ -12,7 +12,7 @@ class Banner extends React.Component {
           <div className="flex flex-wrap items-start justify-start px-6 pt-32 sm:px-10 md:ml-52 md:px-0 md:pt-56">
             <h1 className="flex flex-wrap items-start justify-start gap-0 font-serif text-4xl font-semibold capitalize text-white sm:text-5xl md:gap-5">
               welcome{" "}
-              <span className="text-orange-600">saints of humanity</span>
+              <span className="text-orange-500">saints of humanity</span>
             </h1>
           </div>
           <div className="my-3 flex flex-wrap items-start justify-start px-6 sm:px-10 md:my-10 md:ml-52 md:max-w-lg md:px-0">
@@ -27,7 +27,7 @@ class Banner extends React.Component {
             <div className="md:my-8 my-8">
               <a
                 href="http://"
-                className="bg-orange-600 px-10 py-4 font-serif text-base capitalize text-white"
+                className="bg-orange-500 px-10 py-4 font-serif text-base capitalize text-white"
               >
                 donate
               </a>

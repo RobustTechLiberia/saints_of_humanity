@@ -9,6 +9,8 @@ import RecentProjects from "../components/recent_projects";
 // import FAQ from "../components/faq";
 // import Footer from "../components/footer";
 import seoImage from "../assets/images/logo.png";
+import SectionBanner from "../components/section_banner";
+import Subscription from "../components/scribscription";
 
 class HomePage extends React.Component {
   render() {
@@ -34,6 +36,8 @@ class HomePage extends React.Component {
         <AboutSection />
         <MainSection />
         <RecentProjects />
+        <SectionBanner />
+        <Subscription />
         {/* <Footer /> */}
       </div>
     );

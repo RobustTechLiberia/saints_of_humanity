@@ -6,7 +6,7 @@ class Section extends React.Component {
     const customProgressTheme = {
       base: "overflow-hidden bg-gray-200 dark:bg-gray-700 rounded-none",
       color: {
-        orange: "bg-orange-600 dark:bg-orange-600 rounded-none",
+        orange: "bg-orange-500 dark:bg-orange-600 rounded-none",
       },
     };
 
@@ -15,7 +15,7 @@ class Section extends React.Component {
         <div className="bg-white">
           <div className="md:mt-20 mt-5">
             <div className="mx-3 flex flex-wrap items-start justify-center gap-2  md:mx-32 md:justify-start md:gap-0 lg:gap-0">
-              <div className="h-96 w-full max-w-[23.5rem] bg-orange-600 md:w-96">
+              <div className="h-96 w-full max-w-[23.5rem] bg-orange-500 md:w-96">
                 <h1 className="mx-6 mt-10 font-serif text-3xl font-semibold capitalize sm:mx-10">
                   our core values
                 </h1>
@@ -31,7 +31,7 @@ class Section extends React.Component {
                 className="h-96 w-full max-w-[23.5rem] bg-gray-950 bg-blend-overlay bg-cover bg-top bg-no-repeat md:max-w-none md:flex-1 lg:w-162 lg:flex-none"
                 id="content"
               >
-                <h1 className="mx-6 mt-10 font-serif text-3xl font-semibold capitalize text-orange-700 sm:mx-10 md:text-4xl">
+                <h1 className="mx-6 mt-10 font-serif text-3xl font-semibold capitalize text-orange-500 sm:mx-10 md:text-4xl">
                   our mission
                 </h1>
                 <p className="mx-6 py-3 font-serif text-base text-white sm:mx-10">

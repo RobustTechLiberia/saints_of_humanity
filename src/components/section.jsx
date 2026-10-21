@@ -4,7 +4,7 @@ class MainSection extends React.Component {
   render() {
     return (
       <>
-        <div className="bg-gray-950">
+        <div className="bg-gray-950 h-auto">
           <div className="flex flex-wrap justify-evenly">
             <div className="32 h-auto">
               <span className="text-center text-orange-600 text-3xl">

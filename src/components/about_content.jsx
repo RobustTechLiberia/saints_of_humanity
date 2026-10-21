@@ -1,5 +1,5 @@
 import React from "react";
-
+import ContentSection from "../components/content_section";
 import "../App.css";
 
 class AboutContent extends React.Component {
@@ -42,7 +42,7 @@ class AboutContent extends React.Component {
           className="about-scroll-reveal mt-5 mb-20 flex h-auto flex-wrap items-start justify-center gap-8 bg-white px-6 md:mb-0 md:mt-8 md:justify-start md:gap-10 md:px-0 lg:mx-14 lg:gap-2"
         >
           <div className="w-full max-w-lg bg-white">
-            <h1 className="my-3 font-serif text-3xl font-semibold capitalize text-orange-600 md:mx-20 md:mt-8">
+            <h1 className="my-3 font-serif text-3xl font-semibold capitalize text-orange-500 md:mx-20 md:mt-8">
               who we are?
             </h1>
             <p className="py-2 font-serif text-lg capitalize md:mx-20 md:py-0 md:text-base">
@@ -51,28 +51,6 @@ class AboutContent extends React.Component {
               support, mental health services, and disaster relief.
             </p>
             {/* core values */}
-            <div className="md:mt-8 mt-3 md:h-80 h-auto bg-white">
-              <h1 className="py-0 font-serif text-3xl font-semibold capitalize md:mx-20 md:py-3">
-                core ethics
-              </h1>
-              <ul
-                className="mx-5 flex md:text-md text-md flex-wrap md:justify-start md:items-start md:gap-4 list-none text-base md:mx-28"
-                id="ul"
-              >
-                <li className="w-[calc(50%-0.5rem)] py-3 font-serif font-semibold text-orange-600">
-                  Diaster Relief
-                </li>
-                <li className="w-[calc(50%-0.5rem)] py-3 font-serif font-semibold text-orange-600">
-                  Criminal Justice and Reintegration
-                </li>
-                <li className="w-[calc(50%-0.5rem)] py-3 font-serif font-semibold text-orange-600">
-                  Heritage and Cultural Preservation
-                </li>
-                <li className="w-[calc(50%-0.5rem)] py-3 font-serif font-semibold text-orange-600">
-                  Community Development and Research
-                </li>
-              </ul>
-            </div>
           </div>
 
           <div className="w-full max-w-xs bg-white md:w-80">
@@ -81,7 +59,7 @@ class AboutContent extends React.Component {
                 humanitarian engagement
               </h1>
               <div className="md:my-2 my-2">
-                <div className="h-1 bg-orange-600 w-14"></div>
+                <div className="h-1 bg-orange-500 w-14"></div>
               </div>
               <p className="font-serif text-lg capitalize md:py-3 md:text-base">
                 Recruiting and training dedicated members, known as SAINTS, to
@@ -95,7 +73,7 @@ class AboutContent extends React.Component {
                 Support for Vulnerable Populations
               </h1>
               <div className="md:my-2 my-2">
-                <div className="h-1 bg-orange-600 w-14"></div>
+                <div className="h-1 bg-orange-500 w-14"></div>
               </div>
               <p className="font-serif text-lg capitalize md:py-3 md:text-base">
                 Recruiting and training dedicated members, known as SAINTS, to
@@ -104,6 +82,7 @@ class AboutContent extends React.Component {
             </div>
           </div>
         </div>
+        <ContentSection />
       </>
     );
   }

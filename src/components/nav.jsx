@@ -23,7 +23,7 @@ class NavBar extends React.Component {
               className="mr-3 h-6 sm:h-9"
               alt="Flowbite React Logo"
             /> */}
-            <span className="self-center md:mt-5 mt-3 md:mx-52 uppercase md:text-4xl font-serif md:text-orange-600 text-orange-600 text-3xl whitespace-nowrap  mx-8 font-semibold dark:text-white">
+            <span className="self-center md:mt-5 mt-3 md:mx-52 uppercase md:text-4xl font-serif md:text-orange-500 text-orange-600 text-3xl whitespace-nowrap  mx-8 font-semibold dark:text-white">
               soh{" "}
             </span>
           </NavbarBrand>
@@ -32,28 +32,28 @@ class NavBar extends React.Component {
             <NavbarLink
               href="/"
               active
-              className="!w-full !border-0 !bg-gray-900 font-serif md:text-lg text-xl !text-white md:mr-0 mr-5 md:hover:!bg-inherit hover:bg-gray-950 focus:!bg-inherit active:!bg-inherit md:!w-auto md:!bg-transparent md:hover:!bg-transparent md:focus:!bg-transparent md:active:!bg-transparent"
+              className="!w-full md:text-orange-600 lg:text-orange-600 capitalize !border-0 !bg-gray-900 font-serif md:text-lg text-xl !text-white md:mr-0 mr-5 md:hover:!bg-inherit hover:bg-gray-950 focus:!bg-inherit active:!bg-inherit md:!w-auto md:!bg-transparent md:hover:!bg-transparent md:focus:!bg-transparent md:active:!bg-transparent"
             >
-              Home
+              home
             </NavbarLink>
             {/* REMOVED: as={Link} and changed href to target your route */}
             <NavbarLink
               href="/about"
-              className="!w-full !border-0 !bg-gray-900 font-serif md:text-lg text-xl !text-white md:hover:!bg-inherit focus:!bg-inherit active:!bg-inherit md:!w-auto md:!bg-transparent md:hover:!bg-transparent md:focus:!bg-transparent md:active:!bg-transparent"
+              className="!w-full capitalize !border-0 !bg-gray-900 font-serif md:text-lg text-xl !text-white md:hover:!bg-inherit focus:!bg-inherit active:!bg-inherit md:!w-auto md:!bg-transparent md:hover:!bg-transparent md:focus:!bg-transparent md:active:!bg-transparent"
             >
-              About
+              about
             </NavbarLink>
             <NavbarLink
               href="/services"
-              className="!w-full !border-0 !bg-gray-900 font-serif md:text-lg text-xl !text-white md:hover:!bg-inherit focus:!bg-inherit active:!bg-inherit md:!w-auto md:!bg-transparent md:hover:!bg-transparent md:focus:!bg-transparent md:active:!bg-transparent"
+              className="!w-full uppercase !border-0 !bg-gray-900 font-serif md:text-lg text-xl !text-white md:hover:!bg-inherit focus:!bg-inherit active:!bg-inherit md:!w-auto md:!bg-transparent md:hover:!bg-transparent md:focus:!bg-transparent md:active:!bg-transparent"
             >
-              Services
+              faq
             </NavbarLink>
             <NavbarLink
-              href="/pricing"
-              className="!w-full !border-0 !bg-gray-900 font-serif md:text-lg text-xl !text-white md:hover:!bg-inherit focus:!bg-inherit active:!bg-inherit md:!w-auto md:!bg-transparent md:hover:!bg-transparent md:focus:!bg-transparent md:active:!bg-transparent"
+              href="/projects"
+              className="!w-full capitalize !border-0 !bg-gray-900 font-serif md:text-lg text-xl !text-white md:hover:!bg-inherit focus:!bg-inherit active:!bg-inherit md:!w-auto md:!bg-transparent md:hover:!bg-transparent md:focus:!bg-transparent md:active:!bg-transparent"
             >
-              Pricing
+              projects
             </NavbarLink>
             <NavbarLink
               href="/contact"
