@@ -48,21 +48,21 @@ class RecentProjects extends React.Component {
             </div>
           </div>
           {/* events */}
-          <div className="lg:w-lg md:w-auto w-auto bg-white md:my-20 lg:my-20 my-5 mx-8">
+          <div className="lg:w-lg md:w-auto w-auto bg-white md:my-20 lg:my-20 my-5 mx-3">
             <span className="font-serif text-3xl md:text-3xl md:mx-0 lg:mx-0 mx-4 capitalize text-left font-semibold">
               events{" "}
             </span>
-            <div className="flex flex-col my-10 md:justify-start md:mx-0 lg:mx-0 mx-4 md:items-start h-auto bg-white">
+            <div className="flex flex-col my-10 md:justify-start md:mx-0 lg:mx-0 mx-3 md:items-start h-auto bg-white">
               <div className="w-20 bg-gray-800 h-20 flex flex-wrap justify-start items-start">
                 <img src={img1} alt="" className="w-20 h-20 object-cover" />
               </div>
             </div>
-            <div className="flex flex-col my-10 md:justify-start md:mx-0 lg:mx-0 mx-4 md:items-start h-auto bg-white">
+            <div className="flex flex-col my-10 md:justify-start md:mx-0 lg:mx-0 mx-3 md:items-start h-auto bg-white">
               <div className="w-20 bg-gray-800 h-20">
                 <img src={img2} alt="" className="w-20 h-20 object-cover" />
               </div>
             </div>
-            <div className="flex flex-col my-10 md:justify-start md:mx-0 lg:mx-0 mx-4 md:items-start h-auto bg-white">
+            <div className="flex flex-col my-10 md:justify-start md:mx-0 lg:mx-0 mx-3 md:items-start h-auto bg-white">
               <div className="w-20 bg-gray-800 h-20">
                 <img src={img3} alt="" className="w-20 h-20 object-cover" />
               </div>
