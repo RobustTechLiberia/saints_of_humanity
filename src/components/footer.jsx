@@ -8,12 +8,7 @@ import {
   FooterLinkGroup,
   FooterTitle,
 } from "flowbite-react";
-import {
-  
-  BsFacebook,
-  BsInstagram,
-  BsTwitter,
-} from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 
 class Footer extends React.Component {
   render() {
@@ -23,16 +18,19 @@ class Footer extends React.Component {
           <div className="w-full h-full flex flex-col justify-between ">
             <div className="grid w-full grid-cols-2 gap-8 px-6 py-8 md:mt-10 md:text-4xl text-lg font-serif md:mx-20 mx-3 md:grid-cols-4">
               <div>
-                <FooterTitle title="Company" className="text-white" />
-                <FooterLinkGroup col className="text-gray-400">
+                <FooterTitle
+                  title="Links"
+                  className="text-orange-500 text-lg md:text-xl"
+                />
+                <FooterLinkGroup col className="text-white text-lg md:text-xl">
                   <FooterLink href="#" className="hover:text-white">
                     About
                   </FooterLink>
                   <FooterLink href="#" className="hover:text-white">
-                    Careers
+                    Who We Are
                   </FooterLink>
                   <FooterLink href="#" className="hover:text-white">
-                    Brand Center
+                    Our Projects
                   </FooterLink>
                   <FooterLink href="#" className="hover:text-white">
                     Blog
@@ -40,25 +38,25 @@ class Footer extends React.Component {
                 </FooterLinkGroup>
               </div>
               <div>
-                <FooterTitle title="help center" className="text-white" />
-                <FooterLinkGroup col className="text-gray-400">
-                  <FooterLink href="#" className="hover:text-white">
-                    Discord Server
-                  </FooterLink>
-                  <FooterLink href="#" className="hover:text-white">
-                    Twitter
-                  </FooterLink>
+                <FooterTitle
+                  title="Follow Us"
+                  className="text-orange-500 text-lg md:text-xl"
+                />
+                <FooterLinkGroup col className="text-white text-lg md:text-xl">
                   <FooterLink href="#" className="hover:text-white">
                     Facebook
-                  </FooterLink>
-                  <FooterLink href="#" className="hover:text-white">
-                    Contact Us
                   </FooterLink>
                 </FooterLinkGroup>
               </div>
               <div>
-                <FooterTitle title="legal" className="text-white" />
-                <FooterLinkGroup col className="text-gray-400">
+                <FooterTitle
+                  title="Resource Links"
+                  className="text-orange-500 text-lg md:text-xl"
+                />
+                <FooterLinkGroup
+                  col
+                  className="text-gray-400 text-lg md:text-xl"
+                >
                   <FooterLink href="#" className="hover:text-white">
                     Privacy Policy
                   </FooterLink>
@@ -73,31 +71,29 @@ class Footer extends React.Component {
               <div>{/* Cleaned up broken comment layout here */}</div>
             </div>
 
-            <div className="w-full bg-neutral-900 border-t border-neutral-800 px-6 py-6 sm:flex sm:items-center sm:justify-between">
+            <div className="w-full bg-orange-500 border-t-0 border-neutral-800 px-6 py-6 sm:flex sm:items-center sm:justify-between">
               <FooterCopyright
                 href="#"
-                by="Flowbite™"
-                year={2022}
-                className="text-gray-400"
+                by="saints of humanity"
+                year={2023}
+                className="text-black font-serif lowercase"
               />
-              <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center text-gray-400">
+              <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center text-black">
                 <FooterIcon
                   href="#"
                   icon={BsFacebook}
-                  className="hover:text-white"
+                  className="hover:text-black text-black"
                 />
                 <FooterIcon
                   href="#"
                   icon={BsInstagram}
-                  className="hover:text-white"
+                  className="hover:text-black text-black"
                 />
                 <FooterIcon
                   href="#"
                   icon={BsTwitter}
-                  className="hover:text-white"
+                  className="hover:text-black text-black"
                 />
-                
-               
               </div>
             </div>
           </div>
