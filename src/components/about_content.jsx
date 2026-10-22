@@ -75,8 +75,9 @@ class AboutContent extends React.Component {
                 <div className="h-1 bg-orange-500 w-14"></div>
               </div>
               <p className="font-serif text-lg capitalize md:py-3 md:text-base">
-                Recruiting and training dedicated members, known as SAINTS, to
-                serve communities and implement our mission.
+                Providing food, shelter, medical care, counseling, and
+                rehabilitation for homeless, mentally ill, and underserved
+                individuals.
               </p>
             </div>
           </div>
