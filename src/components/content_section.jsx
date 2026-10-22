@@ -12,11 +12,10 @@ class ContentSection extends React.Component {
               <span className="text-orange-500"> be a help </span> "
             </h1>
             <p className="font-serif text-md md:text-md md:my-0 my-3 capitalize">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima
-              voluptatum voluptatem modi provident aliquam, minus ut explicabo
-              veniam, debitis consectetur voluptates possimus dolorem assumenda
-              voluptatibus eum accusamus sequi laboriosam
-              <br />
+              Operating schools, clinics, and outreach programs, including the
+              Teachers Assistance Program (TAP) and Physician Assistant Program
+              (PAP), to deliver quality education and healthcare in urban and
+              rural areas <br />
               <span className="text-orange-500 font-serif hover:underline">
                 <a href="#">Read more</a>
               </span>
