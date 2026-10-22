@@ -3,11 +3,12 @@ import NavBar from "../components/nav";
 import Banner from "../components/banner";
 import Section from "../components/content";
 import AboutSection from "../components/about_section";
+import ContentSection from "../components/content_section";
 import MainSection from "../components/mainsection";
 import RecentProjects from "../components/recent_projects";
 // import HeroImage from "../components/hero_image";
 // import FAQ from "../components/faq";
-// import Footer from "../components/footer";
+import Footer from "../components/footer";
 import seoImage from "../assets/images/logo.png";
 import SectionBanner from "../components/section_banner";
 import Subscription from "../components/scribscription";
@@ -34,11 +35,12 @@ class HomePage extends React.Component {
         <Banner />
         <Section />
         <AboutSection />
+        <ContentSection />
         <MainSection />
         <RecentProjects />
-        <SectionBanner />
-        <Subscription />
-        {/* <Footer /> */}
+        {/* <SectionBanner /> */}
+        {/* <Subscription /> */}
+        <Footer />
       </div>
     );
   }

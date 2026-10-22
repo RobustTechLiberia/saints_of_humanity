@@ -1,5 +1,4 @@
 import React from "react";
-import ContentSection from "../components/content_section";
 import "../App.css";
 
 class AboutContent extends React.Component {
@@ -39,7 +38,7 @@ class AboutContent extends React.Component {
           ref={(element) => {
             this.section = element;
           }}
-          className="about-scroll-reveal mt-5 mb-20 flex h-auto flex-wrap items-start justify-center gap-8 bg-white px-6 md:mb-0 md:mt-8 md:justify-start md:gap-10 md:px-0 lg:mx-14 lg:gap-2"
+          className="about-scroll-reveal mt-5 mb-10 flex h-auto flex-wrap items-start justify-center gap-8 bg-white px-6 md:mb-0 md:mt-8 md:justify-start md:gap-10 md:px-0 lg:mx-14 lg:gap-2"
         >
           <div className="w-full max-w-lg bg-white">
             <h1 className="my-3 font-serif text-3xl font-semibold capitalize text-orange-500 md:mx-20 md:mt-8">
@@ -82,7 +81,7 @@ class AboutContent extends React.Component {
             </div>
           </div>
         </div>
-        <ContentSection />
+        {/*  */}
       </>
     );
   }
