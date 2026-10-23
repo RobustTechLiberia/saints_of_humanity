@@ -11,7 +11,7 @@ class Engagements extends React.Component {
           <h1 className="font-serif md:text-4xl lg:text-4xl text-4xl md:my-10 lg:my-20 my-8 capitalize  font-semibold text-center">
             community <span className="text-orange-600">engagements</span>
           </h1>
-          <p className="font-serif text-md md:text-md md:text-center md:flex md:flex-wrap md:justify-center md:items-center md:my-10 my-5 mx-4 md:mx-80 lg:mx-80 capitalize">
+          <p className="font-serif text-lg mx-5 md:text-md md:text-center md:flex md:flex-wrap md:justify-center md:items-center md:my-10 my-5  md:mx-80 lg:mx-80 capitalize">
             our proposed patient indentification and referral initiative aims to
             help bridge this gap by identifying people who may need treatment
             for obstetric fistula, cervical cancer, clubfoot, or cataracts and
