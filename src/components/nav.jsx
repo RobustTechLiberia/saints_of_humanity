@@ -45,9 +45,9 @@ class NavBar extends React.Component {
             </NavbarLink>
             <NavbarLink
               href="/services"
-              className="!w-full uppercase !border-0 !bg-gray-900 font-serif md:text-lg text-xl !text-white md:hover:!bg-inherit focus:!bg-inherit active:!bg-inherit md:!w-auto md:!bg-transparent md:hover:!bg-transparent md:focus:!bg-transparent md:active:!bg-transparent"
+              className="!w-full capitalize !border-0 !bg-gray-900 font-serif md:text-lg text-xl !text-white md:hover:!bg-inherit focus:!bg-inherit active:!bg-inherit md:!w-auto md:!bg-transparent md:hover:!bg-transparent md:focus:!bg-transparent md:active:!bg-transparent"
             >
-              faq
+              blog
             </NavbarLink>
             <NavbarLink
               href="/projects"

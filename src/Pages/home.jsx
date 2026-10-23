@@ -6,6 +6,7 @@ import AboutSection from "../components/about_section";
 import ContentSection from "../components/content_section";
 import MainSection from "../components/mainsection";
 import RecentProjects from "../components/recent_projects";
+import Engagements from "../components/engagements";
 // import HeroImage from "../components/hero_image";
 // import FAQ from "../components/faq";
 import Footer from "../components/footer";
@@ -38,7 +39,9 @@ class HomePage extends React.Component {
         <ContentSection />
         <MainSection />
         <RecentProjects />
-        {/* <SectionBanner /> */}
+        <SectionBanner />
+        <Engagements />
+
         {/* <Subscription /> */}
         <Footer />
       </div>
