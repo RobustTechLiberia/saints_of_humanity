@@ -47,6 +47,7 @@ class RecentProjects extends React.Component {
               </div>
             </div>
           </div>
+
           {/* events */}
           <div className="lg:w-lg md:w-auto w-auto bg-white md:my-20 lg:my-20 my-5 mx-3">
             <span className="font-serif text-3xl md:text-3xl md:mx-0 lg:mx-0 mx-4 capitalize text-left font-semibold">
@@ -58,19 +59,34 @@ class RecentProjects extends React.Component {
               support, mental health services, and disaster relief.
             </p>
 
-            <div className="flex flex-col my-5 md:justify-start md:mx-0 lg:mx-0 mx-3 md:items-start h-auto bg-white">
-              <div className="w-20 bg-gray-800 h-20 flex flex-wrap justify-start items-start">
+            {/* Event Item 1 */}
+            <div className="flex flex-row gap-4 my-5 md:justify-start md:mx-0 lg:mx-0 mx-3 items-center h-auto bg-white">
+              <div className="w-20 bg-gray-800 h-20 flex-shrink-0">
                 <img src={img1} alt="" className="w-20 h-20 object-cover" />
               </div>
-            </div>
-            <div className="flex flex-col my-10 md:justify-start md:mx-0 lg:mx-0 mx-3 md:items-start h-auto bg-white">
-              <div className="w-20 bg-gray-800 h-20">
-                <img src={img2} alt="" className="w-20 h-20 object-cover" />
+              <div className="font-serif text-lg font-semibold md:w-72 capitalize">
+                conducted an hiv/aids awareness campaign at konuwah high school,
+                barnesville estate, monrovia, liberia
               </div>
             </div>
-            <div className="flex flex-col my-10 md:justify-start md:mx-0 lg:mx-0 mx-3 md:items-start h-auto bg-white">
-              <div className="w-20 bg-gray-800 h-20">
+
+            {/* Event Item 2 */}
+            <div className="flex flex-row gap-4 my-10 md:justify-start md:mx-0 lg:mx-0 mx-3 items-center h-auto bg-white">
+              <div className="w-20 bg-gray-800 h-20 flex-shrink-0">
+                <img src={img2} alt="" className="w-20 h-20 object-cover" />
+              </div>
+              <div className="font-serif text-lg font-semibold md:w-60 capitalize">
+                a successful school feeding program.
+              </div>
+            </div>
+
+            {/* Event Item 3 */}
+            <div className="flex flex-row gap-4 my-10 md:justify-start md:mx-0 lg:mx-0 mx-3 items-center h-auto bg-white">
+              <div className="w-20 bg-gray-800 h-20 flex-shrink-0">
                 <img src={img3} alt="" className="w-20 h-20 object-cover" />
+              </div>
+              <div className="font-serif text-lg font-semibold md:w-72 capitalize">
+                Youth mentorship and educational leadership workshop.
               </div>
             </div>
           </div>
